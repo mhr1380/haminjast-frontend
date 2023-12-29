@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  padding: 32px 128px;
+}
+.reports_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+.report_container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  border-radius: 4px;
+  padding: 16px;
+}
+.report_title {
+  font-size: 20px;
+}
+.report_description {
+  font-size: 14px;
+  color: #6e6e6e;
+}
+.button_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.report_button {
+  background-color: #2f89fc;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+}

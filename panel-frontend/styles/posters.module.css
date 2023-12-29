@@ -1,0 +1,135 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+.posters_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 90%;
+}
+.poster_body {
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px 1px #eee;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+}
+.poster_title {
+  font-size: 20px;
+  font-weight: 400;
+}
+/* .poster_description {
+} */
+.poster_images_container {
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding: 8px;
+  padding-bottom: 0;
+}
+.poster_images_container::-webkit-scrollbar {
+  width: 0;
+}
+.poster_image {
+  border-radius: 8px;
+  margin-left: 8px;
+  object-fit: cover;
+  display: inline-block;
+}
+.found {
+  color: #2f89fc;
+  font-weight: bold;
+}
+.lost {
+  font-weight: bold;
+  color: #ffd1d1;
+}
+.location {
+  font-weight: bold;
+}
+.title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location_container {
+  font-size: 14px;
+}
+.badges_container {
+  display: flex;
+  align-items: center;
+  row-gap: 0px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  min-height: 32px;
+  /* margin-bottom: 12px; */
+}
+.badge {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+.emergency {
+  background-color: #ffd1d1;
+}
+.category {
+  background-color: #efefef;
+}
+.reward {
+  background-color: #cdf0ea;
+}
+.poster_buttons_container {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.poster_accept_button {
+  background-color: #2f89fc;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: 0;
+  transition: all 0.15s ease-in-out;
+  border: 0;
+}
+.poster_edit_button {
+  background-color: #efefef;
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: 0;
+  transition: all 0.15s ease-in-out;
+  border: 0;
+}
+.poster_accept_button:hover {
+  background-color: #2f89fc;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: 0;
+  transition: all 0.15s ease-in-out;
+  border: 0;
+}
+.poster_reject_button {
+  background-color: #ffd1d1;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.15s ease-in-out;
+  border: 0;
+  border-radius: 8px;
+}

@@ -1,0 +1,112 @@
+.container {
+  margin: 0 auto;
+  margin-top: 96px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+.deposit_container {
+  display: flex;
+  column-gap: 8px;
+}
+.deposit_input {
+  padding: 0px 8px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 200px;
+  padding-left: 32px;
+  border-radius: 4px;
+}
+.deposit_button {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.deposit_options_container {
+  display: flex;
+  column-gap: 16px;
+}
+.desposit_options_item {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.deposit_container {
+  position: relative;
+}
+.currency {
+  position: absolute;
+  font-size: 16px;
+  top: 5px;
+  right: 170px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.transactions_container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.transaction_header {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.58);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 8px;
+  margin-top: 32px;
+  align-self: flex-start;
+  width: 100%;
+}
+.transactions_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 100%;
+}
+.transaction_item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.transaction_subitem {
+  width: 100px;
+}
+.success {
+  color: #07bc0c;
+}
+.failed {
+  color: #e74c3c;
+}
+.transaction_list_header_item {
+  color: rgba(0, 0, 0, 0.58);
+  width: 100px;
+}
+.transaction_list_header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 16px;
+}
+.transaction_list_body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .transactions_container {
+    width: 80%;
+  }
+}
